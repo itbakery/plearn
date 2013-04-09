@@ -25,6 +25,8 @@ gem 'jquery-rails'
 gem 'mongoid'
 gem 'bson_ext'
 
+gem 'capistrano'
+gem 'rvm-capistrano'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
