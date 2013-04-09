@@ -59,15 +59,15 @@
       <div class="container">
         <div class="row">
           <div class="span5">
-            <div class="text-center"><%= image_tag "plearn_word.png" %></div>
-            <h3>ยินดีต้อนรับสู่ วิสาหกิจชุมชน</h3>
-           <h4>กลุ่มอาชีพผลไม้สดและผลผลิตเกษตรแปรรูป</h4>
-            <p>ในละแวกบ้านดอนทอง อ.สามพราน จ.นครปฐม เป็นแหล่งกล้วยหอมทองคุณภาพ และมีจำนวนมาก พวกเราชาวสวน นอกจากจำหน่ายผลสุก แล้ว ยังรวมกลุ่มกัน เพื่อแปรรูปในปี 2552 โดยเริ่มต้นจาก กลุ่มขนาดเล็ก ปัจจุบัน มีโรงเรือน ตามมาตรฐาน สะอาด ปลอดภัย พวกเราใช้กล้วยไร้สารพิษ และปรับปรุง การผลิตอย่างพิถีพิถัน จนได้ "กล้วยหอมอบเนย" หวานมัน กรอบ แผ่นบาง อร่อยทุกชิ้น กินสุดเพลิน</p>
+            <h3 class="text-center red">ยินดีต้อนรับสู่ วิสาหกิจชุมชน</h3>
+            <div class="text-center red"><%= image_tag "plearn_word.png" %></div>
+           <h4 class="text-center">กลุ่มอาชีพผลไม้สดและผลผลิตเกษตรแปรรูป</h4>
+            <p class="txt-left">ในละแวกบ้านดอนทอง อ.สามพราน จ.นครปฐม เป็นแหล่งกล้วยหอมทองคุณภาพ และมีจำนวนมาก พวกเราชาวสวน นอกจากจำหน่ายผลสุก แล้ว ยังรวมกลุ่มกัน เพื่อแปรรูปในปี 2552 โดยเริ่มต้นจาก กลุ่มขนาดเล็ก ปัจจุบัน มีโรงเรือน ตามมาตรฐาน สะอาด ปลอดภัย พวกเราใช้กล้วยไร้สารพิษ และปรับปรุง การผลิตอย่างพิถีพิถัน จนได้ "กล้วยหอมอบเนย" หวานมัน กรอบ แผ่นบาง อร่อยทุกชิ้น กินสุดเพลิน</p>
           </div>
           <div class="span7">
             <div class="flexslider">
               <ul class="slides">
-                <% %w(slide1.png slide2.png slide3.png slide4.png slide5.png slide6.png slide7.png slide8.png slide9.png).each do |img| %>
+                <% %w(slide10.png slide2.png slide3.png slide4.png slide5.png slide6.png slide7.png slide8.png slide9.png slide1.png).each do |img| %>
                   <li>
                     <%= image_tag "#{img}" %>
                   </li>
@@ -78,36 +78,39 @@
         </div>
       </div>
     </div> <!--landing -->
-<div class="txt-middle" id="content">
+    <div id="banner" class="leaf">
       <div class="container">
         <div class="row">
-          <div class="span12">
+          <div class="span12 text-center red" style="padding-top:12px;">
             <h3>ความสุขเหลือเฟือ  เพื่อการแบ่งปัน</h3>
             <h3>อร่อยหวานมันทุกชิ้น แบ่งกินได้ทั้งก๊วน</h3>
-            <div class="tp-bannershadow tp-shadow1" style="width: 940px;"></div>
           </div>
         </div>
+      </div>
+    </div>
+<div class="txt-middle" id="content">
+      <div class="container">
         <div class="row">
           <div class="span4 bouncy">
             <div class="icon_wrapper">
               <i class="glyphicons-display animated"></i>
             </div>
-            <h2>ธุรกิจแปรรูปผลไม้</h2>
-            <p>Bounce is built on the awesome frontend framework Bootstrap, giving you easy access to all of its features.</p>
+            <h3 class="red">ธุรกิจแปรรูปผลไม้</h3>
+            <p class="txt-left">เรามีความมุ่งมั่นที่จะรักษาระดับมาตรฐาน ของการแปรรูปของผลไม้ โดยมีนโยบายคุณภาพด้านความปลอดภัย  ด้านความสะอาด ด้านรสชาติ และรักษาคุณค่าทางโภชนา เหมาะสมกับทุกเพศ ทุกวัย</p>
           </div>
           <div class="span4 bouncy">
             <div class="icon_wrapper">
               <i class="glyphicons-font animated"></i>
             </div>
-            <h2>ธุรกิจเพื่อสิ่งแวดล้อม</h2>
-            <p>Bounce uses the beautiful Open Sans Google Web Font and Glyphicons Pro to deliver highly scalable icons.</p>
+            <h3 class="red">ธุรกิจเพื่อสิ่งแวดล้อม</h3>
+            <p class="txt-left">เรามีเป้าหมายเพื่อให้ธุรกิจของเราเป็นมิตรกับสิ่งแวดล้อม มีการแปรรูปของเสียที่ได้จากการผลิต เพื่อให้เกิดประโยชน์สูงสุด มีการผลิตปุ๋ยจากเปลือกกล้วย การใช้พลังงานแสดงอาทิตย์ และการนำน้ำมันที่เหลือมาทำ ไบโอดีเซล</p>
           </div>
           <div class="span4 bouncy">
             <div class="icon_wrapper">
               <i class="glyphicons-airplane animated"></i>
             </div>
-            <h2>ธุรกิจเพื่อสังคม</h2>
-            <p>Bounce comes with several pages and colors, giving you a head start on creating a unique design.</p>
+            <h3 class="red">ธุรกิจเพื่อสังคม</h3>
+            <p class="txt-left">เราวางแผนการดำเนินธุรกิจตามแนวทาง <a href="http://www.fairtrade.net/" target="_blank"> "Social Fair Trade" </a> เพื่อต้องการที่สร้างความเท่าเทียมกันระหว่างพันธมิตรธุรกิจ ได้แก่ ชาวสวน โรงงาน ผู้แทนจำหน่าย และที่สำคัญคือผู้บริโภค จะต้องมีทางเลือกบริโภคสินค้าปลอดภัย ราคาเป็นธรรม</p>
           </div>
         </div>
         <hr class="dashed">
@@ -122,22 +125,41 @@
                     <% end %>
                </ul>
             </div>
-            <h3>ขั้นตอนการผลิต</h3>
-            <p>Optional subtext to help better explain the image above can go here.</p>
+            <h3 class="green">ขั้นตอนการผลิต</h3>
+            <p class="txt-left">เริ่มจากการคัดสรรกล้วยหอมทองที่เป็นออร์กานิคที่มีขนาดใหญ่ นำมาผ่านกระบวนการล้าง สไลด์ เพื่อให้ได้ความบางพิเศษ จากนั้นนำไปทอด และ ฉาบอย่างพิถีพิถัน ทำให้กล้วยมีทั้งความบาง ความกรอบและรสชาติที่เป็นเอกลักษณ์ ของ "เพลิน"</p>
           </div>
           <div class="span4">
+            <!--
             <a href="" class="thumbnail">
               <img src="http://quickimage.it/400x200" alt="image">
             </a>
-            <h3>แนวทางการดำเนินงาน</h3>
-            <p>Optional subtext to help better explain the image above can go here.</p>
+            -->
+            <div class="flexslider">
+               <ul class="slides">
+                    <% %w(com1.png com2.png com3.png com4.png).each do |img| %>
+                        <li>
+                            <%= image_tag "#{img}" %>
+                        </li>
+                    <% end %>
+               </ul>
+            </div>
+
+            <h3 class="pink">แนวทางการดำเนินงาน</h3>
+            <p class="txt-left">การทำงานเน้นการทำงานอย่างมีส่วนร่วม วางแผนอย่างรอบคอบเป็นระบบ รับฟังความคิดเป็นของทุกฝ่าย พร้อมนำมาปรับปรุง ประสานงานร่วมกัน ทั้งภาครัฐและเอกชน สนับสนุนให้ชุมชมได้มีโอกาสแสดงออก ถึงความคิด ความเข้มแข็ง และความสามัคคี ในชุมชน แบ่งปันผลประโยชน์ อย่างเป็นธรรม</p>
           </div>
           <div class="span4">
-            <a href="" class="thumbnail">
-              <img src="http://quickimage.it/400x200" alt="image">
-            </a>
-            <h3>ตัวแทนจำหน่าย</h3>
-            <p>Optional subtext to help better explain the image above can go here.</p>
+            <div class="flexslider">
+               <ul class="slides">
+                    <% %w(map1.png map2.png map3.png map4.png map5.png map6.png map7.png map8.png map9.png map10.png map11.png).each do |img| %>
+                        <li>
+                            <%= image_tag "#{img}" %>
+                        </li>
+                    <% end %>
+               </ul>
+            </div>
+
+            <h3 class="blue">ตัวแทนจำหน่าย</h3>
+            <p class="txt-left">นักธุรกิจมากมายได้รวมกันเป็นเครือข่ายการจัดจำหน่ายเพื่อที่ต้องการกระจายสินค้าให้ถึงผู้บริโภคโดยตรง และเป็นการพึ่งพากันในสังคม ที่ต้องการให้เกิด เครือข่ายบริโภคอย่างเป็นธรรมเพื่อความยั่งยืนของสังคม ทุกฝ่ายอยู่ได้และเกื้อกูลกัน</p>
           </div>
         </div>
       </div>

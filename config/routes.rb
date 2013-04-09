@@ -1,6 +1,6 @@
 Plearn::Application.routes.draw do
   resources :pages
-
+  match 'p/:id' => 'pages#show'
 
   resources :pages
   get "welcome/index"

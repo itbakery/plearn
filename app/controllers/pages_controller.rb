@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  layout 'page'
+  layout "page"
   # GET /pages
   # GET /pages.json
   def index
@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-    @page = Page.find(params[:id])
+    @page = Page.where(permalink: params[:id]).first
 
     respond_to do |format|
       format.html # show.html.erb
