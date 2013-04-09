@@ -51,7 +51,8 @@ set :bundle_cmd, "bundle"
 #after "deploy:update_code", "deploy:rvm:setup"
 after :deploy, "deploy:rvm:trust_rvmrc"
 after :deploy, "deploy:bundle_install"
-after :deploy, "deploy:cleanup" # keep only the last 5 releases
+after :deploy, "deploy:assets:precompile"
+#after :deploy, "deploy:cleanup" # keep only the last 5 releases
 
 #require 'sidekiq/capistrano'
 
